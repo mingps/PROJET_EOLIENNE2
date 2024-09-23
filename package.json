@@ -1,0 +1,20 @@
+{
+    "name": "nom-du-projet",
+    "version": "1.0.0",
+    "description": "Une brève description de votre projet",
+    "main": "app.js",
+    "scripts": {
+        "start": "node app.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Votre Nom",
+    "license": "ISC",
+    "dependencies": {
+        "dotenv": "^8.6.0",
+        "express": "^4.21.0",
+        "mariadb": "^3.3.2",
+        "mqtt": "^4.3.8",
+        "path": "^0.12.7",
+        "ws": "^8.18.0"
+    }
+}
