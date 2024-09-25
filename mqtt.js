@@ -18,7 +18,7 @@ const client = mqtt.connect(BrokerURL);
 client.on('connect', function () {
   console.log('Connecté à MQTT Broker');
 
-  // S'abonner au topic temperature
+  // S'abonner au topic 
   client.subscribe('DONNEE', function (err) {
     if (!err) {
       console.log('Abonné au topic "DONNEE"');
@@ -40,7 +40,7 @@ client.on('connect', function () {
 client.on('message', function (topic, message) {
   console.log(`Message reçu sur ${topic}: ${message.toString()}`);
 });
-
 client.on('error', function (err) {
   console.error('Erreur de connexion à MQTT Broker :', err);
 });
+module.exports = client;
